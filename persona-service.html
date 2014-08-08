@@ -1,0 +1,43 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/core-ajax/core-ajax.html">
+
+<polymer-element name="persona-service" attributes="persona">
+  <template>
+    <style>
+      :host {
+       display: none;
+      }
+    </style>
+    <core-ajax
+      id="ajax"
+      auto
+      url="../api/persona.json"
+      on-core-response="{{personaLoaded}}"
+      handleAs="json">
+    </core-ajax>
+  </template>
+  <script>
+   Polymer('persona-service', {
+     created: function() {
+       this.persona = [];
+     },
+     personaLoaded: function() {
+       //Make a copy of the loaded data
+       this.persona = this.$.ajax.response;
+       console.log("Persona: " + this.persona);
+     },
+     /**
+      * Update the section items with the new value.
+      * (Two-way data binding updates the value stored locally.)
+      * If this were a real service, this method would do something useful.
+      * @method addItem
+      * @param section {String} Heading for section.
+      * @param item {String} Item being added.
+      */
+     addItem: function(section, item) {
+       //no service backend, just log the change
+       console.log('Section ' + section + ' has new item: ' + item);
+     }
+   });
+  </script>
+</polymer-element>

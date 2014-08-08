@@ -1,0 +1,32 @@
+{
+    "name": "Giles Paterson",
+    "age": "37",
+    "sex": "Male",
+    "image": "https://avatars3.githubusercontent.com/u/1556818?v=2&s=140",
+    "sections": [
+        {
+            "heading": "Section 1",
+            "items": [
+                "Something",
+                "Something Else",
+                "Yet another Thing"
+            ]
+        },
+        {
+            "heading": "Section 2",
+            "items": [
+                "Something",
+                "Something Else",
+                "Yet another Thing"
+            ]
+        },
+        {
+            "heading": "Section 3",
+            "items": [
+                "Hello",
+                "Is it Me",
+                "You're looking for?"
+            ]
+        }
+    ]
+}

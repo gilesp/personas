@@ -1,0 +1,20 @@
+{
+  "name": "personas",
+  "version": "0.0.0",
+  "description": "Personas component.",
+  "main": "personas.html",
+  "authors": [
+    "Giles Paterson <giles@vurt.co.uk>"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "persona-elements": "*"
+  }
+}
